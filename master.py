@@ -59,8 +59,8 @@ class Master(kmeans_pb2_grpc.MasterServicer):
 
         for i in range(self.mappers):
             os.mkdir(f"Mappers/M{i}")
-        for i in range(self.reducers):
-            os.mkdir(f"Reducers/R{i}")
+        # for i in range(self.reducers):
+        #     os.mkdir(f"Reducers/R{i}")
         # os.mkdir('partitions')
         # os.mkdir('output')
 
@@ -175,7 +175,7 @@ class Master(kmeans_pb2_grpc.MasterServicer):
                 except grpc.RpcError as e:
                     self.dump(f"mapper {i} is down")
                     print("mapper", i, "is down")
-                    print(e)
+                    # print(e)
 
             # else:
             #     for i in range(self.mappers):
@@ -278,6 +278,7 @@ class Master(kmeans_pb2_grpc.MasterServicer):
                 self.alive_reducers = 0
                 self.alive_reducer_addresses = []
                 # send heartbeat to all reducers
+                # time.sleep(20)
                 self.dump("Sending heartbeat to reducers")
                 for i in range(self.reducers):
                     try:
@@ -292,10 +293,27 @@ class Master(kmeans_pb2_grpc.MasterServicer):
                     except grpc.RpcError as e:
                         self.dump(f"reducer {i} is down")
                         print("reducer", i, "is down")
-                        print(e)
+                        # print(e)
 
                     # get stubs for all reducers and send request to all in parallel
                 self.dump("Starting reducers in parallel")
+                
+                
+                '''
+                Normally R1 would be assigned to only partition 1 of all mappers and so on
+                However if a reducer is down causing a mismatch in the number of partitions and reducers
+                then partitions are assigned to reducers in partition_num $ alive reducers fashion
+
+                Find these partition to reducer mappings
+                '''
+                reducer_partition_map = {}
+                for i in range(self.alive_reducers):
+                    reducer_partition_map[i] = []
+                for i in range(self.reducers):
+                    reducer_partition_map[i % self.alive_reducers].append(i)
+                print("reducer part map",reducer_partition_map)
+                
+                
                 with ThreadPoolExecutor(
                     max_workers=self.alive_reducers
                 ) as reducer_executor:
@@ -306,6 +324,7 @@ class Master(kmeans_pb2_grpc.MasterServicer):
                         reducer_id = i
                         args = kmeans_pb2.ReducerArgs(
                             reducer_id=reducer_id,
+                            reducer_partition_map = reducer_partition_map[i],
                             mapper_addresses=self.alive_mapper_addresses,
                             num_centroids=self.num_centroids,
                         )
@@ -359,10 +378,6 @@ class Master(kmeans_pb2_grpc.MasterServicer):
             #     self.run()
             # # self.write_centroids_to_file(self.centroids)
 
-        for pid in self.mapper_pids:
-            os.kill(pid, 2)
-        for pid in self.reducer_pids:
-            os.kill(pid, 2)
         os.kill(os.getpid(), 2)
 
     # def retry_mapper(self, future_num):
@@ -505,16 +520,32 @@ class Reducer(kmeans_pb2_grpc.ReducerServicer):
         self.mapper_addresses = request.mapper_addresses
         self.num_centroids = request.num_centroids
         self.reducer_id = request.reducer_id
-        # request the reducer_id-th partition from all mappers
+        self.partition_indexes = request.reducer_partition_map
+        # print("Reducer partitions: ", self.partition_indexes)
+
+        # request partition_indexes from all mappers
         for i, mapper_address in enumerate(self.mapper_addresses):
             channel = grpc.insecure_channel(mapper_address)
             stub = kmeans_pb2_grpc.MapperStub(channel)
-            partition_id = self.reducer_id
-            response = stub.PartitionReq(
-                kmeans_pb2.PartitionReqArgs(reducer_id=self.reducer_id)
-            )
-            # print(response.partition_file_content)
-            self.partition_data.append(response.partition_file_content)
+            for partition_id in self.partition_indexes:
+                response = stub.PartitionReq(
+                    kmeans_pb2.PartitionReqArgs(reducer_id=partition_id)
+                )
+                self.partition_data.append(response.partition_file_content)
+        # print("Partition data: ", self.partition_data)
+
+
+
+        # # request the reducer_id-th partition from all mappers
+        # for i, mapper_address in enumerate(self.mapper_addresses):
+        #     channel = grpc.insecure_channel(mapper_address)
+        #     stub = kmeans_pb2_grpc.MapperStub(channel)
+        #     partition_id = self.reducer_id
+        #     response = stub.PartitionReq(
+        #         kmeans_pb2.PartitionReqArgs(reducer_id=self.reducer_id)
+        #     )
+        #     # print(response.partition_file_content)
+        #     self.partition_data.append(response.partition_file_content)
 
         # print(self.partition_data)
         self.grouped_partitions = self.shuffle_and_sort(self.partition_data)

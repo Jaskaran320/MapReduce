@@ -39,10 +39,17 @@ message MapperReply {
   string status = 1;
 }
 
+message reducer_partition_map 
+{
+  repeated string partitions=2;
+}
+
+
 message ReducerArgs {
   int32 reducer_id = 1;
-  repeated string mapper_addresses = 2;
-  int32 num_centroids = 3;
+  repeated int32 reducer_partition_map = 2; 
+  repeated string mapper_addresses = 3;
+  int32 num_centroids = 4;
 
 }
 
