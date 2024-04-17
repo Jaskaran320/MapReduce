@@ -1,0 +1,6 @@
+Reading points file
+Initializing centroids
+Launching mappers as seperate processes from master
+Reading points file
+Initializing centroids
+Launching mappers as seperate processes from master

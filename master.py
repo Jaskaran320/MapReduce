@@ -18,8 +18,6 @@ class Master(kmeans_pb2_grpc.MasterServicer):
         self.reducers = reducers
         self.num_centroids = num_centroids
         self.centroids = []
-        self.all_points = self.read_points_file("points.txt")
-        self.num_points = len(self.all_points)
         self.num_iterations = num_iterations
         self.epsilon = EPSILON
         self.start_indices = []
@@ -32,6 +30,8 @@ class Master(kmeans_pb2_grpc.MasterServicer):
         self.reducer_responses = []
         self.master_dump_path = "master_dump.txt"
         self.master_dump_handle = open(self.master_dump_path, "a+")
+        self.all_points = self.read_points_file("points2.txt")
+        self.num_points = len(self.all_points)
 
         self.init_centroids()
         # self.assign_indices()
@@ -421,7 +421,7 @@ class Mapper(kmeans_pb2_grpc.MapperServicer):
         self.num_centroids = len(request.centroids)
         self.start_index = request.start_index
         self.end_index = request.end_index
-        self.file_path = "points.txt"
+        self.file_path = "points2.txt"
         self.num_reducers = request.num_reducers
         self.points = self.read_points_file(self.file_path)
         self.threshold = THRESHOLD
