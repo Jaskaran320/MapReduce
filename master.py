@@ -31,10 +31,8 @@ class Master(kmeans_pb2_grpc.MasterServicer):
         self.reducer_responses = []
 
         
-
-
         self.init_centroids()
-        self.assign_indexes()
+        # self.assign_indexes()
         # self.create_file_structure()
         
         self.run()
@@ -68,8 +66,10 @@ class Master(kmeans_pb2_grpc.MasterServicer):
 
     # assign start and end indexes to each mapper
     def assign_indexes(self):
-        points_per_mapper = self.num_points // self.mappers
-        for i in range(self.mappers):
+        self.start_indexes=[]
+        self.end_indexes=[]
+        points_per_mapper = self.num_points // self.alive_mappers
+        for i in range(self.alive_mappers):
             self.start_indexes.append(i * points_per_mapper)
             self.end_indexes.append((i + 1) * points_per_mapper)
         self.end_indexes[-1] = self.num_points
@@ -122,20 +122,53 @@ class Master(kmeans_pb2_grpc.MasterServicer):
     def run(self):
         self.launch_mappers()
         self.launch_reducers()
-        
+
         print("Mappers: ", self.mapper_pids)
         print("Reducers: ", self.reducer_pids)
         completed_iterations = 0
         converged = False
         old_centroids=[]
         while completed_iterations < self.num_iterations or not converged:
+            print("Iteration: ", completed_iterations)
             old_centroids = self.centroids
-            
-            # get stubs for all mappers and send request to all in parallel
-            with ThreadPoolExecutor(max_workers=self.mappers) as executor:
-                futures = []
+            self.alive_mappers=0
+            self.alive_mapper_addresses=[]
+            # send heartbeat to all mappers
+            if completed_iterations ==1:
+                # time.sleep(15)
                 for i in range(self.mappers):
-                    channel = grpc.insecure_channel(self.mapper_addresses[i])
+                    try:
+                        channel = grpc.insecure_channel(self.mapper_addresses[i])
+                        stub = kmeans_pb2_grpc.MapperStub(channel)
+                        args = kmeans_pb2.HeartBeatArgs(mapper_id=i)
+                        response = stub.HeartBeat(args)
+                        print("Heartbeat from mapper: ", i, response.status)
+                        self.alive_mappers+=1
+                        self.alive_mapper_addresses.append(self.mapper_addresses[i])
+                    except grpc.RpcError as e:
+                        print("mapper", i, "is down")
+                        print(e)
+            
+            else:
+                for i in range(self.mappers):
+                    try:
+                        channel = grpc.insecure_channel(self.mapper_addresses[i])
+                        stub = kmeans_pb2_grpc.MapperStub(channel)
+                        args = kmeans_pb2.HeartBeatArgs(mapper_id=i)
+                        response = stub.HeartBeat(args)
+                        print("Heartbeat from mapper ", i, response.status)
+                        self.alive_mappers+=1
+                        self.alive_mapper_addresses.append(self.mapper_addresses[i])
+                    except grpc.RpcError as e:
+                        print("mapper", i, "is down")
+                        print(e)
+
+            self.assign_indexes()
+            # get stubs for all mappers and send request to all in parallel
+            with ThreadPoolExecutor(max_workers=self.alive_mappers) as executor:
+                futures = []
+                for i in range(self.alive_mappers):
+                    channel = grpc.insecure_channel(self.alive_mapper_addresses[i])
                     stub = kmeans_pb2_grpc.MapperStub(channel)  
                     mapper_id = i
                     # print the arguments
@@ -152,79 +185,148 @@ class Master(kmeans_pb2_grpc.MasterServicer):
                     future = executor.submit(stub.Mapper, args)
                     futures.append(future)
 
-
-            # Gather all the responses
+            self.mapper_responses = []
+            failed_mappers = []
             for future_num in range(len(futures)):
                 response = futures[future_num].result()
                 if response.status == 'FAIL':
-                    # executor.submit(self.retry_mapper, future_num)
-                    print("Retrying mapper: ", future_num)
-                else:
+                    failed_mappers.append(future_num)
+                elif response.status == 'Success':
                     self.mapper_responses.append(response)
-            # print("Mapper responses: ", self.mapper_responses)
+            while True:
+                time.sleep(0.5)
+                # failed_mappers = []
 
-        # def retry_mapper(self, future_num):
-        #     print("Retrying mapper: ", future_num)
-        #     channel = grpc.insecure_channel(self.mapper_addresses[future_num])
-        #     stub = kmeans_pb2_grpc.MapperStub(channel)
-        #     mapper_id = future_num
-        #     centroids = [kmeans_pb2.Centroid(centroid=c) for c in self.centroids]
-        #     args = kmeans_pb2.MapperArgs(mapper_id=mapper_id,
-        #                     start_index=self.start_indexes[future_num],
-        #                     end_index=self.end_indexes[future_num],
-        #                     centroids = centroids,
-        #                     num_reducers = self.reducers)
-        #     response = stub.Mapper(args)
-        #     self.mapper_responses.append(response)
-            
-            # if all mappers return SUCCESS, launch reducers
-            # if all([response.status == 'SUCCESS' for response in self.mapper_responses]):
-
-                # get stubs for all reducers and send request to all in parallel
-            with ThreadPoolExecutor(max_workers=self.reducers) as reducer_executor:
-                reducer_futures = []
-                for i in range(self.reducers):
-                    channel = grpc.insecure_channel(self.reducer_addresses[i])
-                    stub = kmeans_pb2_grpc.ReducerStub(channel)
-                    reducer_id = i
-                    args = kmeans_pb2.ReducerArgs(reducer_id=reducer_id,
-                                                    mapper_addresses=self.mapper_addresses,
-                                                    num_centroids=self.num_centroids)
-                    reducer_future = reducer_executor.submit(stub.Reducer, args)
-                    reducer_futures.append(reducer_future)
-            
-            # Gather all the responses
-            for future_num in range(len(reducer_futures)):
-                response = reducer_futures[future_num].result()
-                if response.status == 'FAIL':
-                    # executor.submit(self.retry_mapper, future_num)
-                    print("Retrying reducer: ", future_num)
-                else:
-                    self.reducer_responses.append(response)
-
-            # print("Reducer responses: ", self.reducer_responses)
-            # consolidate the new centroids from all reducers
-            new_centroids = {}
-            for reducer_response in self.reducer_responses:
-                for centroid in reducer_response.computed_centroids:
-                    new_centroids[centroid.centroid_key-1] = centroid.centroid
-
-            # print("New centroids: ", new_centroids)
-            # convert new_centroids into a list with key as the index
-            formatted_new_centroids = [new_centroids[i] for i in range(self.num_centroids)]
-            print("Old centroids: ", old_centroids)
-            print("New centroids: ", formatted_new_centroids)
-            self.centroids = formatted_new_centroids
-
-            # check for convergence upto 2 decimal places
-            for i in range(self.num_centroids):
-                if int(old_centroids[i][0] * 100) == int(formatted_new_centroids[i][0] * 100) and int(old_centroids[i][1] * 100) == int(formatted_new_centroids[i][1] * 100):
-                    converged = True
-                else:
-                    converged = False
+                print("Failed mappers: ", failed_mappers)
+                # If there are no failed mappers, break the loop
+                if not failed_mappers:
                     break
-            completed_iterations += 1
 
+                # rerun the failed mappers
+                for failed_mapper in failed_mappers:
+    
+                    print("Retrying mapper: ", failed_mapper)
+                    channel = grpc.insecure_channel(self.alive_mapper_addresses[failed_mapper])
+                    stub = kmeans_pb2_grpc.MapperStub(channel)
+                    mapper_id = failed_mapper
+                    centroids = [kmeans_pb2.Centroid(centroid=c) for c in self.centroids]
+                    args = kmeans_pb2.MapperArgs(mapper_id=mapper_id,
+                            start_index=self.start_indexes[failed_mapper],
+                            end_index=self.end_indexes[failed_mapper],
+                            centroids = centroids,
+                            num_reducers = self.reducers)
+                    response = stub.Mapper(args)
+                    if response.status == 'FAIL':
+                        pass
+                    else:
+                        failed_mappers.remove(failed_mapper)
+                        self.mapper_responses.append(response)
+
+            # # Gather all the responses
+            # for future_num in range(len(futures)):
+            #     response = futures[future_num].result()
+            #     if response.status == 'FAIL':
+            #         # executor.submit(self.retry_mapper, future_num)
+            #         print("Retrying mapper: ", future_num)
+            #     else:
+            #         self.mapper_responses.append(response)
+            # # print("Mapper responses: ", self.mapper_responses)
+
+            # if all mappers return SUCCESS, start reducers
+            print("Mapper responses: ", self.mapper_responses)
+            if all([response.status == 'Success' for response in self.mapper_responses]):
+
+                self.alive_reducers=0
+                self.alive_reducer_addresses=[]
+                # send heartbeat to all reducers
+                for i in range(self.reducers):
+                    try:
+                        channel = grpc.insecure_channel(self.reducer_addresses[i])
+                        stub = kmeans_pb2_grpc.ReducerStub(channel)
+                        args = kmeans_pb2.HeartBeatArgs(mapper_id=i)
+                        response = stub.HeartBeat(args)
+                        print("Heartbeat from reducer: ", i, response.status)
+                        self.alive_reducers+=1
+                        self.alive_reducer_addresses.append(self.reducer_addresses[i])
+                    except grpc.RpcError as e:
+                        print("reducer", i, "is down")
+                        print(e)
+                    
+
+                    # get stubs for all reducers and send request to all in parallel
+                with ThreadPoolExecutor(max_workers=self.alive_reducers) as reducer_executor:
+                    reducer_futures = []
+                    for i in range(self.alive_reducers):
+                        channel = grpc.insecure_channel(self.alive_reducer_addresses[i])
+                        stub = kmeans_pb2_grpc.ReducerStub(channel)
+                        reducer_id = i
+                        args = kmeans_pb2.ReducerArgs(reducer_id=reducer_id,
+                                                        mapper_addresses=self.alive_mapper_addresses,
+                                                        num_centroids=self.num_centroids)
+                        reducer_future = reducer_executor.submit(stub.Reducer, args)
+                        reducer_futures.append(reducer_future)
+                
+                # Gather all the responses
+                for future_num in range(len(reducer_futures)):
+                    response = reducer_futures[future_num].result()
+                    if response.status == 'FAIL':
+                        # executor.submit(self.retry_mapper, future_num)
+                        print("Retrying reducer: ", future_num)
+                    else:
+                        self.reducer_responses.append(response)
+
+                # print("Reducer responses: ", self.reducer_responses)
+                # consolidate the new centroids from all reducers
+                new_centroids = {}
+                for reducer_response in self.reducer_responses:
+                    for centroid in reducer_response.computed_centroids:
+                        new_centroids[centroid.centroid_key-1] = centroid.centroid
+
+                # print("New centroids: ", new_centroids)
+                # convert new_centroids into a list with key as the index
+                formatted_new_centroids = [new_centroids[i] for i in range(self.num_centroids)]
+                print("Old centroids: ", old_centroids)
+                print("New centroids: ", formatted_new_centroids)
+                self.centroids = formatted_new_centroids
+                epsilon = 1e-3
+                # check for convergence with an epsilon
+                for i in range(self.num_centroids):
+                    if int(old_centroids[i][0]) -int(formatted_new_centroids[i][0]) < epsilon and int(old_centroids[i][1]) - int(formatted_new_centroids[i][1]) < epsilon: 
+                        converged = True
+                    else:
+                        converged = False
+                        break
+                completed_iterations += 1
+                self.write_centroids_to_file(self.centroids)
+
+            else :
+                print("Some mappers failed. Retrying iteration")
+                completed_iterations += 1
+            #     completed_iterations -= 1
+            #     self.mapper_responses = []
+            #     self.reducer_responses = []
+            #     self.centroids = old_centroids
+            #     self.run()
+            # # self.write_centroids_to_file(self.centroids)
+    def retry_mapper(self, future_num):
+        print("Retrying mapper: ", future_num)
+        channel = grpc.insecure_channel(self.mapper_addresses[future_num])
+        stub = kmeans_pb2_grpc.MapperStub(channel)
+        mapper_id = future_num
+        centroids = [kmeans_pb2.Centroid(centroid=c) for c in self.centroids]
+        args = kmeans_pb2.MapperArgs(mapper_id=mapper_id,
+                        start_index=self.start_indexes[future_num],
+                        end_index=self.end_indexes[future_num],
+                        centroids = centroids,
+                        num_reducers = self.reducers)
+        response = stub.Mapper(args)
+        self.mapper_responses.append(response)
+            
+
+    def write_centroids_to_file(self, centroids):
+        with open('centroids.txt', 'w') as file:
+            for centroid in centroids:
+                file.write(','.join(map(str, centroid)) + '\n')        
 class Mapper(kmeans_pb2_grpc.MapperServicer):
     def __init__(self, master):
         self.master = master
@@ -261,8 +363,17 @@ class Mapper(kmeans_pb2_grpc.MapperServicer):
         self.partitions = self.create_partitions(self.point_assignments, self.num_reducers)
         # print(self.partitions)
         self.write_partitions_to_file(self.partitions)
-        return kmeans_pb2.MapperReply(status='Success')
 
+        # random chance to send FAIL status
+        if self.mapper_id == 0:
+            prob = random.random()
+            print("Probability: ", prob)
+            if prob < 0.7:
+                return kmeans_pb2.MapperReply(status='FAIL')
+            else:
+                return kmeans_pb2.MapperReply(status='Success')
+        else:
+            return kmeans_pb2.MapperReply(status='Success')
 
 
     # read points from file from start_index to end_index
@@ -306,7 +417,8 @@ class Mapper(kmeans_pb2_grpc.MapperServicer):
                 partition.append(line)
 
         return kmeans_pb2.PartitionReqReply(partition_file_content=partition)
-
+    def HeartBeat(self, request, context):
+        return kmeans_pb2.HeartBeatReply(status='Success')
 
 def euclidean_distance(point1, point2):
     return sum([(a - b) ** 2 for a, b in zip(point1, point2)]) ** 0.5
@@ -371,8 +483,8 @@ class Reducer(kmeans_pb2_grpc.ReducerServicer):
             new_centroid = [sum(x) / len(values) for x in zip(*values)]
             new_centroids[key] = new_centroid
         return new_centroids
-
-
+    def HeartBeat(self, request, context):
+        return kmeans_pb2.HeartBeatReply(status='Success')
 if __name__ == '__main__':
     try:
         server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
@@ -383,8 +495,6 @@ if __name__ == '__main__':
         num_iterations = int(input("Enter number of iterations: "))
         # create a master object
         master = Master(mappers, reducers, num_centroids, num_iterations)
-
-
 
         kmeans_pb2_grpc.add_MasterServicer_to_server(master, server)
         server.add_insecure_port('[::]:50050')

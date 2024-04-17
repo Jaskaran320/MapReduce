@@ -14,10 +14,12 @@ service Master{
 service Mapper{
   rpc Mapper (MapperArgs) returns (MapperReply) {}
   rpc PartitionReq (PartitionReqArgs) returns (PartitionReqReply) {}
+  rpc HeartBeat (HeartBeatArgs) returns (HeartBeatReply) {}
 }
 
 service Reducer{
   rpc Reducer (ReducerArgs) returns (ReducerReply) {}
+  rpc HeartBeat (HeartBeatArgs) returns (HeartBeatReply) {}
 }
 
 
@@ -60,4 +62,12 @@ message PartitionReqArgs {
 
 message PartitionReqReply {
   repeated string partition_file_content = 1;
+}
+
+message HeartBeatArgs {
+  int32 mapper_id = 1;  
+}
+
+message HeartBeatReply {
+  string status = 1;
 }

@@ -67,6 +67,11 @@ class MapperStub(object):
                 request_serializer=kmeans__pb2.PartitionReqArgs.SerializeToString,
                 response_deserializer=kmeans__pb2.PartitionReqReply.FromString,
                 )
+        self.HeartBeat = channel.unary_unary(
+                '/kmeans.Mapper/HeartBeat',
+                request_serializer=kmeans__pb2.HeartBeatArgs.SerializeToString,
+                response_deserializer=kmeans__pb2.HeartBeatReply.FromString,
+                )
 
 
 class MapperServicer(object):
@@ -84,6 +89,12 @@ class MapperServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def HeartBeat(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_MapperServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -96,6 +107,11 @@ def add_MapperServicer_to_server(servicer, server):
                     servicer.PartitionReq,
                     request_deserializer=kmeans__pb2.PartitionReqArgs.FromString,
                     response_serializer=kmeans__pb2.PartitionReqReply.SerializeToString,
+            ),
+            'HeartBeat': grpc.unary_unary_rpc_method_handler(
+                    servicer.HeartBeat,
+                    request_deserializer=kmeans__pb2.HeartBeatArgs.FromString,
+                    response_serializer=kmeans__pb2.HeartBeatReply.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -141,6 +157,23 @@ class Mapper(object):
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
+    @staticmethod
+    def HeartBeat(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/kmeans.Mapper/HeartBeat',
+            kmeans__pb2.HeartBeatArgs.SerializeToString,
+            kmeans__pb2.HeartBeatReply.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
 
 class ReducerStub(object):
     """Missing associated documentation comment in .proto file."""
@@ -156,12 +189,23 @@ class ReducerStub(object):
                 request_serializer=kmeans__pb2.ReducerArgs.SerializeToString,
                 response_deserializer=kmeans__pb2.ReducerReply.FromString,
                 )
+        self.HeartBeat = channel.unary_unary(
+                '/kmeans.Reducer/HeartBeat',
+                request_serializer=kmeans__pb2.HeartBeatArgs.SerializeToString,
+                response_deserializer=kmeans__pb2.HeartBeatReply.FromString,
+                )
 
 
 class ReducerServicer(object):
     """Missing associated documentation comment in .proto file."""
 
     def Reducer(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def HeartBeat(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -174,6 +218,11 @@ def add_ReducerServicer_to_server(servicer, server):
                     servicer.Reducer,
                     request_deserializer=kmeans__pb2.ReducerArgs.FromString,
                     response_serializer=kmeans__pb2.ReducerReply.SerializeToString,
+            ),
+            'HeartBeat': grpc.unary_unary_rpc_method_handler(
+                    servicer.HeartBeat,
+                    request_deserializer=kmeans__pb2.HeartBeatArgs.FromString,
+                    response_serializer=kmeans__pb2.HeartBeatReply.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -199,5 +248,22 @@ class Reducer(object):
         return grpc.experimental.unary_unary(request, target, '/kmeans.Reducer/Reducer',
             kmeans__pb2.ReducerArgs.SerializeToString,
             kmeans__pb2.ReducerReply.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def HeartBeat(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/kmeans.Reducer/HeartBeat',
+            kmeans__pb2.HeartBeatArgs.SerializeToString,
+            kmeans__pb2.HeartBeatReply.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

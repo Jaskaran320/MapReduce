@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0ckmeans.proto\x12\x06kmeans\"\x82\x01\n\nMapperArgs\x12\x11\n\tmapper_id\x18\x01 \x01(\x05\x12\x13\n\x0bstart_index\x18\x02 \x01(\x05\x12\x11\n\tend_index\x18\x03 \x01(\x05\x12#\n\tcentroids\x18\x04 \x03(\x0b\x32\x10.kmeans.Centroid\x12\x14\n\x0cnum_reducers\x18\x05 \x01(\x05\"\x1c\n\x08\x43\x65ntroid\x12\x10\n\x08\x63\x65ntroid\x18\x01 \x03(\x01\"\x1d\n\x0bMapperReply\x12\x0e\n\x06status\x18\x01 \x01(\t\"R\n\x0bReducerArgs\x12\x12\n\nreducer_id\x18\x01 \x01(\x05\x12\x18\n\x10mapper_addresses\x18\x02 \x03(\t\x12\x15\n\rnum_centroids\x18\x03 \x01(\x05\"T\n\x0cReducerReply\x12\x0e\n\x06status\x18\x01 \x01(\t\x12\x34\n\x12\x63omputed_centroids\x18\x02 \x03(\x0b\x32\x18.kmeans.computedCentroid\":\n\x10\x63omputedCentroid\x12\x14\n\x0c\x63\x65ntroid_key\x18\x01 \x01(\x05\x12\x10\n\x08\x63\x65ntroid\x18\x02 \x03(\x01\"&\n\x10PartitionReqArgs\x12\x12\n\nreducer_id\x18\x01 \x01(\x05\"3\n\x11PartitionReqReply\x12\x1e\n\x16partition_file_content\x18\x01 \x03(\t2\x08\n\x06Master2\x84\x01\n\x06Mapper\x12\x33\n\x06Mapper\x12\x12.kmeans.MapperArgs\x1a\x13.kmeans.MapperReply\"\x00\x12\x45\n\x0cPartitionReq\x12\x18.kmeans.PartitionReqArgs\x1a\x19.kmeans.PartitionReqReply\"\x00\x32\x41\n\x07Reducer\x12\x36\n\x07Reducer\x12\x13.kmeans.ReducerArgs\x1a\x14.kmeans.ReducerReply\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0ckmeans.proto\x12\x06kmeans\"\x82\x01\n\nMapperArgs\x12\x11\n\tmapper_id\x18\x01 \x01(\x05\x12\x13\n\x0bstart_index\x18\x02 \x01(\x05\x12\x11\n\tend_index\x18\x03 \x01(\x05\x12#\n\tcentroids\x18\x04 \x03(\x0b\x32\x10.kmeans.Centroid\x12\x14\n\x0cnum_reducers\x18\x05 \x01(\x05\"\x1c\n\x08\x43\x65ntroid\x12\x10\n\x08\x63\x65ntroid\x18\x01 \x03(\x01\"\x1d\n\x0bMapperReply\x12\x0e\n\x06status\x18\x01 \x01(\t\"R\n\x0bReducerArgs\x12\x12\n\nreducer_id\x18\x01 \x01(\x05\x12\x18\n\x10mapper_addresses\x18\x02 \x03(\t\x12\x15\n\rnum_centroids\x18\x03 \x01(\x05\"T\n\x0cReducerReply\x12\x0e\n\x06status\x18\x01 \x01(\t\x12\x34\n\x12\x63omputed_centroids\x18\x02 \x03(\x0b\x32\x18.kmeans.computedCentroid\":\n\x10\x63omputedCentroid\x12\x14\n\x0c\x63\x65ntroid_key\x18\x01 \x01(\x05\x12\x10\n\x08\x63\x65ntroid\x18\x02 \x03(\x01\"&\n\x10PartitionReqArgs\x12\x12\n\nreducer_id\x18\x01 \x01(\x05\"3\n\x11PartitionReqReply\x12\x1e\n\x16partition_file_content\x18\x01 \x03(\t\"\"\n\rHeartBeatArgs\x12\x11\n\tmapper_id\x18\x01 \x01(\x05\" \n\x0eHeartBeatReply\x12\x0e\n\x06status\x18\x01 \x01(\t2\x08\n\x06Master2\xc2\x01\n\x06Mapper\x12\x33\n\x06Mapper\x12\x12.kmeans.MapperArgs\x1a\x13.kmeans.MapperReply\"\x00\x12\x45\n\x0cPartitionReq\x12\x18.kmeans.PartitionReqArgs\x1a\x19.kmeans.PartitionReqReply\"\x00\x12<\n\tHeartBeat\x12\x15.kmeans.HeartBeatArgs\x1a\x16.kmeans.HeartBeatReply\"\x00\x32\x7f\n\x07Reducer\x12\x36\n\x07Reducer\x12\x13.kmeans.ReducerArgs\x1a\x14.kmeans.ReducerReply\"\x00\x12<\n\tHeartBeat\x12\x15.kmeans.HeartBeatArgs\x1a\x16.kmeans.HeartBeatReply\"\x00\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -37,10 +37,14 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_PARTITIONREQARGS']._serialized_end=486
   _globals['_PARTITIONREQREPLY']._serialized_start=488
   _globals['_PARTITIONREQREPLY']._serialized_end=539
-  _globals['_MASTER']._serialized_start=541
-  _globals['_MASTER']._serialized_end=549
-  _globals['_MAPPER']._serialized_start=552
-  _globals['_MAPPER']._serialized_end=684
-  _globals['_REDUCER']._serialized_start=686
-  _globals['_REDUCER']._serialized_end=751
+  _globals['_HEARTBEATARGS']._serialized_start=541
+  _globals['_HEARTBEATARGS']._serialized_end=575
+  _globals['_HEARTBEATREPLY']._serialized_start=577
+  _globals['_HEARTBEATREPLY']._serialized_end=609
+  _globals['_MASTER']._serialized_start=611
+  _globals['_MASTER']._serialized_end=619
+  _globals['_MAPPER']._serialized_start=622
+  _globals['_MAPPER']._serialized_end=816
+  _globals['_REDUCER']._serialized_start=818
+  _globals['_REDUCER']._serialized_end=945
 # @@protoc_insertion_point(module_scope)
