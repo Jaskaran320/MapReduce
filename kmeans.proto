@@ -65,7 +65,7 @@ message PartitionReqReply {
 }
 
 message HeartBeatArgs {
-  int32 mapper_id = 1;  
+  int32 mapper_id = 1;
 }
 
 message HeartBeatReply {
