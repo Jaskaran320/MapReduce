@@ -4,3 +4,3920 @@ Launching mappers as seperate processes from master
 Reading points file
 Initializing centroids
 Launching mappers as seperate processes from master
+Reading points file
+Initializing centroids
+Launching mappers as seperate processes from master
+launching mappers
+launching reducers
+Iteration: 0
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.8, 9.8])], [(1, [0.4, 7.2]), (1, [-1.5, 7.3]), (1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9]), (1, [0.0, 7.1])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+launching mappers
+launching reducers
+Iteration: 0
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 1 partitions: [[(0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [-1.7, 7.5]), (0, [-1.8, 7.6])], [(1, [0.9, 9.6]), (1, [0.7, 9.9]), (1, [0.5, 7.4]), (1, [0.9, 9.7]), (1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+launching mappers
+launching reducers
+Iteration: 0
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [8.1, 3.4]), (0, [7.3, 2.3]), (0, [9.1, 3.1]), (0, [8.5, 2.7]), (0, [8.3, 2.9]), (0, [0.0, 7.1])], [(1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [10.3, -0.3]), (1, [9.7, 0.8])]]
+), (1, [9.3, 1.9])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+launching mappers
+launching reducers
+Iteration: 0
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [0.7, 9.9]), (0, [0.5, 7.4]), (0, [0.9, 9.7])], [(1, [-1.6, 7.4]), (1, [0.3, 7.2]), (1, [-1.7, 7.5]), (1, [-1.8, 7.6]), (1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[2.15, 8.25], [6.656000000000001, 2.7239999999999998]]
+Iteration: 1
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.6000000000000001, 8.177777777777777], [7.904545454545456, 2.0000000000000004]]
+Iteration: 2
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.29000000000000015, 8.163333333333332], [8.400000000000002, 1.7126984126984133]]
+Iteration: 3
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.15714285714285728, 8.157142857142857], [8.665853658536587, 1.5585365853658544]]
+Iteration: 4
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.08333333333333347, 8.153703703703703], [8.831683168316832, 1.4623762376237628]]
+Iteration: 5
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.03636363636363648, 8.151515151515152], [8.944999999999999, 1.3966666666666672]]
+Iteration: 6
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.0038461538461539435, 8.15], [9.0273381294964, 1.348920863309353]]
+Iteration: 7
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.01999999999999992, 8.148888888888889], [9.089873417721513, 1.3126582278481016]]
+Iteration: 8
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.03823529411764699, 8.148039215686277], [9.13898305084745, 1.2841807909604523]]
+Iteration: 9
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.052631578947368356, 8.147368421052633], [9.17857142857142, 1.2612244897959188]]
+Iteration: 10
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.06428571428571422, 8.146825396825399], [9.211162790697665, 1.2423255813953489]]
+Iteration: 11
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.0739130434782608, 8.146376811594205], [9.238461538461529, 1.2264957264957264]]
+Iteration: 12
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.08199999999999992, 8.146000000000003], [9.261660079051376, 1.213043478260869]]
+Iteration: 13
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.08888888888888881, 8.145679012345681], [9.281617647058816, 1.2014705882352934]]
+Iteration: 14
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.09482758620689645, 8.145402298850577], [9.298969072164942, 1.1914089347079027]]
+Iteration: 15
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.09999999999999991, 8.145161290322584], [9.314193548387092, 1.182580645161289]]
+Iteration: 16
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.10454545454545448, 8.144949494949497], [9.32765957446808, 1.1747720364741627]]
+Iteration: 17
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.10857142857142854, 8.144761904761907], [9.339655172413789, 1.1678160919540215]]
+Iteration: 18
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.11216216216216215, 8.144594594594597], [9.350408719346046, 1.1615803814713879]]
+Iteration: 19
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.1153846153846154, 8.144444444444447], [9.360103626943001, 1.1559585492227962]]
+Iteration: 20
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.1182926829268293, 8.144308943089433], [9.368888888888886, 1.1508641975308622]]
+Iteration: 21
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.12093023255813959, 8.14418604651163], [9.376886792452828, 1.1462264150943375]]
+Iteration: 22
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.1233333333333334, 8.144074074074075], [9.384198645598191, 1.1419864559819393]]
+Iteration: 23
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.12553191489361712, 8.143971631205673], [9.390909090909092, 1.138095238095236]]
+Iteration: 24
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.12755102040816338, 8.143877551020408], [9.3970893970894, 1.1345114345114324]]
+Iteration: 25
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.1294117647058825, 8.1437908496732], [9.402800000000006, 1.131199999999998]]
+Iteration: 26
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.13113207547169828, 8.143710691823898], [9.408092485549142, 1.128131021194603]]
+Iteration: 27
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.13272727272727292, 8.143636363636361], [9.413011152416368, 1.12527881040892]]
+Iteration: 28
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.13421052631578967, 8.143567251461985], [9.417594254937177, 1.122621184919208]]
+Iteration: 29
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.13559322033898327, 8.143502824858754], [9.421875000000016, 1.120138888888887]]
+Iteration: 30
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.13688524590163959, 8.143442622950817], [9.425882352941194, 1.1178151260504183]]
+Iteration: 31
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.13809523809523835, 8.143386243386239], [9.429641693811094, 1.1156351791530925]]
+Iteration: 32
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.1392307692307695, 8.143333333333329], [9.433175355450258, 1.1135860979462857]]
+Iteration: 33
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.14029850746268685, 8.143283582089547], [9.436503067484685, 1.1116564417177897]]
+Iteration: 34
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.14130434782608725, 8.14323671497584], [9.43964232488825, 1.1098360655737687]]
+Iteration: 35
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.14225352112676087, 8.143192488262905], [9.4426086956522, 1.1081159420289837]]
+Iteration: 36
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.14315068493150718, 8.143150684931502], [9.445416078984513, 1.106488011283496]]
+Iteration: 37
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.14400000000000035, 8.143111111111105], [9.448076923076952, 1.1049450549450532]]
+Iteration: 38
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.1448051948051951, 8.143073593073588], [9.450602409638584, 1.103480589022756]]
+Iteration: 39
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.1455696202531648, 8.143037974683539], [9.453002610966088, 1.1020887728459512]]
+Iteration: 40
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.14629629629629648, 8.143004115226331], [9.455286624203854, 1.1007643312101894]]
+Iteration: 41
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.14698795180722907, 8.142971887550194], [9.457462686567197, 1.0995024875621873]]
+Iteration: 42
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.14764705882352952, 8.14294117647058], [9.459538274605137, 1.0982989064398525]]
+Iteration: 43
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.1482758620689656, 8.142911877394628], [9.461520190023787, 1.0971496437054615]]
+Iteration: 44
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.14887640449438205, 8.142883895131078], [9.463414634146377, 1.0960511033681748]]
+Iteration: 45
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.14945054945054945, 8.142857142857135], [9.465227272727308, 1.0949999999999984]]
+Iteration: 46
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.14999999999999997, 8.14283154121863], [9.466963292547309, 1.0939933259176846]]
+Iteration: 47
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.1505263157894736, 8.14280701754385], [9.468627450980424, 1.0930283224400854]]
+Iteration: 48
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[-0.15103092783505143, 8.14278350515463], [9.470224119530448, 1.0921024546424745]]
+Iteration: 49
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[-0.15151515151515138, 8.142760942760933], [9.471757322175762, 1.0912133891213376]]
+launching mappers
+launching reducers
+Iteration: 0
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [11.1, -1.5]), (0, [10.8, -0.6]), (0, [9.5, 1.5]), (0, [8.7, 2.4]), (0, [11.2, -1.2]), (0, [10.5, -0.1]), (0, [9.3, 1.9]), (0, [8.6, 2.6])], [(1, [0.9, 9.6]), (1, [-1.6, 7.4]), (1, [0.3, 7.2]), (1, [0.7, 9.9]), (1, [-1.7, 7.5]), (1, [0.5, 7.4]), (1, [0.9, 9.7]), (1, [-1.8, 7.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.14910277324632962, 7.922838499184329], [9.35216942148763, 1.1786157024793376]]
+Iteration: 1
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.14288000000000012, 7.927039999999989], [9.35592705167176, 1.1760891590678815]]
+Iteration: 2
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.13689167974882277, 7.931083202511763], [9.359542743538793, 1.1736580516898603]]
+Iteration: 3
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.13112480739599403, 7.93497688751925], [9.363024390243927, 1.1713170731707314]]
+Iteration: 4
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.125567322239032, 7.938729198184558], [9.366379310344852, 1.1690613026819923]]
+Iteration: 5
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.12020802377414586, 7.942347696879632], [9.369614299153364, 1.1668861712135468]]
+Iteration: 6
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.11503649635036522, 7.945839416058383], [9.372735674676548, 1.1647874306839192]]
+Iteration: 7
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.11004304160688695, 7.949210903873733], [9.375749318801113, 1.1627611262488655]]
+Iteration: 8
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.10521861777150948, 7.952468265162189], [9.378660714285736, 1.1608035714285725]]
+Iteration: 9
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.10055478502080477, 7.955617198335633], [9.381474978050942, 1.1589113257243209]]
+launching mappers
+launching reducers
+Iteration: 0
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [11.1, -1.5]), (0, [10.8, -0.6]), (0, [9.5, 1.5]), (0, [8.7, 2.4]), (0, [11.2, -1.2]), (0, [10.5, -0.1]), (0, [9.3, 1.9]), (0, [8.6, 2.6])], [(1, [0.9, 9.6]), (1, [-1.6, 7.4]), (1, [0.3, 7.2]), (1, [0.7, 9.9]), (1, [-1.7, 7.5]), (1, [0.5, 7.4]), (1, [0.9, 9.7]), (1, [-1.8, 7.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.34310810810810843, 7.778243243243231], [9.281841876629036, 1.2317115551694193]]
+Iteration: 1
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.33484042553191523, 7.784042553191477], [9.286153846153864, 1.2287179487179505]]
+Iteration: 2
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.32683246073298466, 7.789659685863861], [9.29032800672836, 1.2258200168208597]]
+Iteration: 3
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.31907216494845403, 7.795103092783492], [9.294370860927168, 1.2230132450331148]]
+Iteration: 4
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.3115482233502543, 7.800380710659885], [9.298288508557473, 1.2202933985330098]]
+Iteration: 5
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.3042500000000005, 7.805499999999987], [9.302086677367592, 1.2176565008025708]]
+Iteration: 6
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.2971674876847296, 7.810467980295553], [9.305770750988158, 1.2150988142292518]]
+Iteration: 7
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.2902912621359229, 7.81529126213591], [9.309345794392538, 1.2126168224299096]]
+Iteration: 8
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.28361244019138815, 7.819976076555011], [9.312816577129714, 1.2102072141212619]]
+Iteration: 9
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.2771226415094346, 7.8245283018867795], [9.316187594553721, 1.207866868381244]]
+Iteration: 10
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.2708139534883728, 7.82895348837208], [9.319463087248335, 1.2055928411633146]]
+Iteration: 11
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.26467889908256953, 7.833256880733932], [9.322647058823541, 1.2033823529411802]]
+Iteration: 12
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.25871040723981975, 7.837443438914014], [9.325743292240766, 1.2012327773749134]]
+Iteration: 13
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.25290178571428645, 7.841517857142844], [9.328755364806879, 1.1991416309012917]]
+Iteration: 14
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.24724669603524307, 7.845484581497784], [9.331686661961903, 1.1971065631616133]]
+Iteration: 15
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.24173913043478343, 7.849347826086944], [9.334540389972156, 1.1951253481894195]]
+Iteration: 16
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.23637339055794074, 7.853111587982819], [9.337319587628876, 1.1931958762886645]]
+Iteration: 17
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.23114406779661104, 7.856779661016936], [9.340027137042073, 1.191316146540032]]
+Iteration: 18
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.2260460251046034, 7.860355648535552], [9.342665773610191, 1.1894842598794424]]
+Iteration: 19
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.22107438016529016, 7.863842975206598], [9.345238095238106, 1.1876984126984178]]
+Iteration: 20
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.2162244897959193, 7.8672448979591705], [9.347746570868722, 1.185956890920972]]
+Iteration: 21
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.21149193548387193, 7.8705645161290185], [9.350193548387105, 1.1842580645161345]]
+Iteration: 22
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.20687250996016035, 7.873804780876481], [9.352581261950295, 1.1826003824091833]]
+Iteration: 23
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.20236220472441044, 7.876968503936994], [9.35491183879094, 1.180982367758192]]
+Iteration: 24
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.19795719844358078, 7.8800583657587415], [9.357187305538279, 1.1794026135656561]]
+Iteration: 25
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.1936538461538472, 7.883076923076909], [9.359409594095949, 1.1778597785977918]]
+Iteration: 26
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.18944866920152198, 7.886026615969568], [9.36158054711247, 1.1763525835866322]]
+Iteration: 27
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.18533834586466275, 7.888909774436078], [9.36370192307693, 1.174879807692314]]
+Iteration: 28
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.1813197026022316, 7.891728624535304], [9.365775401069525, 1.1734402852049974]]
+Iteration: 29
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.17738970588235406, 7.894485294117636], [9.367802585193896, 1.1720329024676914]]
+Iteration: 30
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.1735454545454557, 7.897181818181808], [9.36978500871587, 1.1706565950029117]]
+Iteration: 31
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.16978417266187165, 7.899820143884883], [9.371724137931041, 1.1693103448275928]]
+Iteration: 32
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.16610320284697627, 7.902402135231308], [9.373621375781699, 1.1679931779420192]]
+Iteration: 33
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.1625000000000012, 7.904929577464781], [9.375478065241847, 1.1667041619797591]]
+Iteration: 34
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.1589721254355413, 7.907404181184662], [9.377295492487477, 1.1654424040066844]]
+Iteration: 35
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.15551724137931158, 7.90982758620689], [9.379074889867836, 1.1642070484581564]]
+Iteration: 36
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.15213310580204903, 7.912201365187707], [9.38081743869209, 1.1629972752043662]]
+Iteration: 37
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.14881756756756884, 7.914527027027022], [9.382524271844648, 1.1618122977346343]]
+Iteration: 38
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.14556856187291098, 7.916806020066885], [9.38419647624131, 1.1606513614522223]]
+Iteration: 39
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.14238410596026618, 7.919039735099334], [9.385835095137404, 1.1595137420718882]]
+Iteration: 40
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.13926229508196852, 7.921229508196718], [9.387441130298253, 1.1583987441130363]]
+Iteration: 41
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.13620129870130002, 7.923376623376621], [9.389015544041428, 1.1573056994818718]]
+Iteration: 42
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.13319935691318463, 7.925482315112538], [9.390559261159543, 1.1562339661364869]]
+Iteration: 43
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.13025477707006505, 7.927547770700635], [9.39207317073168, 1.1551829268292748]]
+Iteration: 44
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.12736593059937046, 7.929574132492113], [9.39355812783087, 1.154151987921496]]
+Iteration: 45
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.12453125000000138, 7.9315625], [9.395014955134563, 1.1531405782652109]]
+Iteration: 46
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.12174922600619334, 7.9335139318885455], [9.396444444444407, 1.1521481481481546]]
+Iteration: 47
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.11901840490797687, 7.935429447852761], [9.397847358121291, 1.1511741682974623]]
+Iteration: 48
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.11633738601823851, 7.937310030395138], [9.399224430441064, 1.1502181289384457]]
+Iteration: 49
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.11370481927710986, 7.939156626506026], [9.400576368876036, 1.1492795389049055]]
+Iteration: 50
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.11111940298507607, 7.940970149253734], [9.401903855306951, 1.1483579247977218]]
+Iteration: 51
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.1085798816568062, 7.942751479289944], [9.403207547169764, 1.1474528301886857]]
+Iteration: 52
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.10608504398827126, 7.944501466275663], [9.404488078541323, 1.1465638148667665]]
+Iteration: 53
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.10363372093023404, 7.946220930232562], [9.405746061167696, 1.1456904541241955]]
+Iteration: 54
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.10122478386167297, 7.947910662824212], [9.406982085438623, 1.1448323380799328]]
+Iteration: 55
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.09885714285714436, 7.949571428571433], [9.408196721311418, 1.1439890710382576]]
+Iteration: 56
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.09652974504249444, 7.9512039660056715], [9.4093905191873, 1.1431602708803674]]
+Iteration: 57
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.09424157303370939, 7.952808988764051], [9.410564010743, 1.1423455684870252]]
+Iteration: 58
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.09199164345404054, 7.954387186629533], [9.411717709720309, 1.1415446071904192]]
+Iteration: 59
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.08977900552486343, 7.955939226519344], [9.41285211267599, 1.1407570422535274]]
+Iteration: 60
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.08760273972602897, 7.957465753424665], [9.413967699694389, 1.1399825403753883]]
+Iteration: 61
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.0854619565217407, 7.9589673913043555], [9.415064935064866, 1.1392207792207856]]
+Iteration: 62
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.08335579514824955, 7.960444743935318], [9.416144267926077, 1.138471446972956]]
+Iteration: 63
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.08128342245989462, 7.961898395721934], [9.417206132878972, 1.137734241908013]]
+Iteration: 64
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.0792440318302403, 7.963328912466852], [9.418250950570267, 1.1370088719898668]]
+Iteration: 65
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.07723684210526473, 7.964736842105273], [9.419279128248037, 1.1362950544844992]]
+Iteration: 66
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.0752610966057457, 7.966122715404709], [9.420291060290982, 1.1355925155925217]]
+Iteration: 67
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.07331606217616737, 7.967487046632135], [9.421287128712791, 1.1349009900990161]]
+Iteration: 68
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.07140102827763654, 7.968830334190242], [9.42226770364298, 1.1342202210397114]]
+Iteration: 69
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.06951530612245056, 7.970153061224501], [9.423233143785456, 1.133549959382622]]
+Iteration: 70
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.06765822784810284, 7.971455696202543], [9.42418379685602, 1.1328899637243108]]
+Iteration: 71
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.06582914572864479, 7.972738693467348], [9.425119999999913, 1.1322400000000061]]
+Iteration: 72
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.06402743142144797, 7.974002493765598], [9.426042080190463, 1.1315998412068342]]
+Iteration: 73
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.062252475247526334, 7.975247524752487], [9.426950354609838, 1.130969267139486]]
+Iteration: 74
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.06050368550368709, 7.976474201474214], [9.427845131012813, 1.1303480641376675]]
+Iteration: 75
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.05878048780487963, 7.9776829268292815], [9.42872670807444, 1.1297360248447266]]
+Iteration: 76
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.05708232445520739, 7.978874092009699], [9.429595375722448, 1.1291329479768848]]
+Iteration: 77
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.055408653846155426, 7.980048076923091], [9.430451415455144, 1.1285386381025309]]
+Iteration: 78
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.05375894988066984, 7.981205250596672], [9.431295100645553, 1.1279529054310733]]
+Iteration: 79
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.052132701421802534, 7.982345971563995], [9.432126696832478, 1.1273755656108657]]
+Iteration: 80
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.05052941176470747, 7.983470588235309], [9.43294646199915, 1.1268064395357604]]
+Iteration: 81
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.04894859813084271, 7.984579439252352], [9.433754646840045, 1.1262453531598573]]
+Iteration: 82
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.04738979118329625, 7.985672853828322], [9.434551495016507, 1.1256921373200504]]
+Iteration: 83
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.04585253456221357, 7.986751152073748], [9.435337243401653, 1.1251466275659885]]
+Iteration: 84
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.04433638443936085, 7.987814645308941], [9.436112122315146, 1.1246086639970938]]
+Iteration: 85
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.04284090909091068, 7.988863636363653], [9.436876355748264, 1.1240780911062966]]
+Iteration: 86
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.04136568848758623, 7.989898419864576], [9.437630161579783, 1.1235547576301677]]
+Iteration: 87
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.039910313901346875, 7.990919282511228], [9.438373751783056, 1.1230385164051415]]
+Iteration: 88
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.03847438752784123, 7.991926503340775], [9.439107332624754, 1.122529224229549]]
+Iteration: 89
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.037057522123895396, 7.992920353982319], [9.439831104855621, 1.122026741731181]]
+Iteration: 90
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.035659340659342245, 7.993901098901117], [9.440545263893629, 1.1215309332401318]]
+Iteration: 91
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.03427947598253434, 7.9948689956332055], [9.441249999999883, 1.1210416666666727]]
+Iteration: 92
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.03291757049891698, 7.9958242950108644], [9.441945498447623, 1.1205588133839315]]
+Iteration: 93
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.03157327586207053, 7.996767241379329], [9.442631939684597, 1.1200822481151533]]
+Iteration: 94
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.030246252676661076, 7.997698072805158], [9.443309499489155, 1.119611848825338]]
+Iteration: 95
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.028936170212767492, 7.998617021276615], [9.44397834912031, 1.119147496617056]]
+Iteration: 96
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.027642706131079744, 7.999524312896425], [9.444638655462063, 1.118689075630258]]
+Iteration: 97
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.0263655462184889, 8.000420168067247], [9.445290581162201, 1.1182364729458978]]
+Iteration: 98
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.025104384133613183, 8.001304801670166], [9.445934284765888, 1.1177895784932022]]
+Iteration: 99
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.023858921161827203, 8.002178423236534], [9.446569920844201, 1.1173482849604282]]
+launching mappers
+launching reducers
+Iteration: 0
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.022628865979382906, 8.003041237113422], [9.447197640117867, 1.1169124877089538]]
+Iteration: 1
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.02141393442623096, 8.00389344262297], [9.447817589576418, 1.1164820846905597]]
+Iteration: 2
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.02021384928717048, 8.004735234215907], [9.448429912592943, 1.1160569763677624]]
+Iteration: 3
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.019028340080973084, 8.005566801619455], [9.449034749034618, 1.1156370656370715]]
+Iteration: 4
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.017857142857144268, 8.0063883299799], [9.449632235369233, 1.1152222577550426]]
+Iteration: 5
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+centroids: [[0.016700000000001398, 8.007200000000022], [9.450222504767828, 1.1148124602670115]]
+Iteration: 6
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.015556660039762816, 8.008001988071593], [9.450805687203658, 1.1144075829383946]]
+Iteration: 7
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.014426877470357105, 8.008794466403184], [9.451381909547605, 1.114007537688448]]
+Iteration: 8
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.013310412573675235, 8.009577603143441], [9.451951295660184, 1.1136122385263874]]
+Iteration: 9
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.012207031250001353, 8.010351562500022], [9.45251396648031, 1.1132216014897638]]
+launching mappers
+launching reducers
+Iteration: 0
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Reducer called 1
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.011116504854370275, 8.01111650485439], [9.453070040110939, 1.1128355445850104]]
+Iteration: 1
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.010038610038611371, 8.01187258687261], [9.453619631901702, 1.1124539877300672]]
+Iteration: 2
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.00897312859884969, 8.012619961612307], [9.45416285452868, 1.1120768526989995]]
+Iteration: 3
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.007919847328245588, 8.013358778625976], [9.454699818071418, 1.1117040630685322]]
+Iteration: 4
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.006878557874764113, 8.014089184060744], [9.455230630087287, 1.1113355441664212]]
+Iteration: 5
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.005849056603774883, 8.01481132075474], [9.45575539568331, 1.1109712230215885]]
+Iteration: 6
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 1
+centroids: [[0.004831144465292098, 8.015525328330229], [9.45627421758555, 1.110611028315952]]
+Iteration: 7
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 1 partitions: [[(0, [0.9, 9.6]), (0, [-1.6, 7.4]), (0, [0.3, 7.2]), (0, [0.7, 9.9]), (0, [-1.7, 7.5]), (0, [0.5, 7.4]), (0, [0.9, 9.7]), (0, [-1.8, 7.6])], [(1, [11.1, -1.5]), (1, [10.8, -0.6]), (1, [9.5, 1.5]), (1, [8.7, 2.4]), (1, [11.2, -1.2]), (1, [10.5, -0.1]), (1, [9.3, 1.9]), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.0038246268656729272, 8.016231343283605], [9.45678719620614, 1.1102548903378837]]
+Iteration: 8
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 1
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 1 to mapper 1
+Partition request from reducer 0 to mapper 1
+centroids: [[0.0028293135436005374, 8.01692949907238], [9.457294429708078, 1.1099027409372295]]
+Iteration: 9
+Heartbeat from mapper: 0 Success
+Heartbeat from mapper: 1 Success
+Starting mappers in parallel
+Mapper called 0
+Mapper 0 partitions: [[(0, [0.4, 7.2]), (0, [0.8, 9.8]), (0, [-1.5, 7.3]), (0, [0.0, 7.1])], [(1, [8.1, 3.4]), (1, [7.3, 2.3]), (1, [9.1, 3.1]), (1, [8.9, 0.2]), (1, [11.5, -1.9]), (1, [10.2, 0.5]), (1, [9.8, 1.2]), (1, [8.5, 2.7]), (1, [10.3, -0.3]), (1, [9.7, 0.8]), (1, [8.3, 2.9])]]
+), (1, [8.6, 2.6])]]
+Writing partitions to file
+Failed mappers []
+Mapper responses: [status: "Success"
+, status: "Success"
+]
+Sending heartbeat to reducers
+Heartbeat from reducer: 0 Success
+Heartbeat from reducer: 1 Success
+Starting reducers in parallel
+Reducer called 1
+Partition request from reducer 1 to mapper 0
+Partition request from reducer 0 to mapper 0
+Partition request from reducer 0 to mapper 1
+Partition request from reducer 1 to mapper 1
+centroids: [[0.0018450184501857742, 8.017619926199286], [9.45779601406785, 1.1095545134818345]]

@@ -6,12 +6,7 @@ import kmeans_pb2 as kmeans__pb2
 
 
 class MasterStub(object):
-    """Defining service name along with the function with ReqArg and Response name
-    need multiple services for Master , mapper , reducer
-
-    rpc Master_Mapper (MasterMapperArgs) returns (MasterMapperReply) {}
-    rpc Master_Reducer (MasterReducerArgs) returns (MasterReducerReply) {}
-    """
+    """Missing associated documentation comment in .proto file."""
 
     def __init__(self, channel):
         """Constructor.
@@ -22,12 +17,7 @@ class MasterStub(object):
 
 
 class MasterServicer(object):
-    """Defining service name along with the function with ReqArg and Response name
-    need multiple services for Master , mapper , reducer
-
-    rpc Master_Mapper (MasterMapperArgs) returns (MasterMapperReply) {}
-    rpc Master_Reducer (MasterReducerArgs) returns (MasterReducerReply) {}
-    """
+    """Missing associated documentation comment in .proto file."""
 
 
 def add_MasterServicer_to_server(servicer, server):
@@ -40,12 +30,7 @@ def add_MasterServicer_to_server(servicer, server):
 
  # This class is part of an EXPERIMENTAL API.
 class Master(object):
-    """Defining service name along with the function with ReqArg and Response name
-    need multiple services for Master , mapper , reducer
-
-    rpc Master_Mapper (MasterMapperArgs) returns (MasterMapperReply) {}
-    rpc Master_Reducer (MasterReducerArgs) returns (MasterReducerReply) {}
-    """
+    """Missing associated documentation comment in .proto file."""
 
 
 class MapperStub(object):

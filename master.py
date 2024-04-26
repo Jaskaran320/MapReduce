@@ -1,23 +1,27 @@
+import os
+import time
 import grpc
+import shutil
+import random
 import kmeans_pb2
 import kmeans_pb2_grpc
+import multiprocessing as mp
 from concurrent import futures
 from concurrent.futures import ThreadPoolExecutor
-import multiprocessing as mp
-import os
-import random
-import time
-import shutil
 
 EPSILON = 1e-4
 THRESHOLD = 0.0
 
+
 class Master(kmeans_pb2_grpc.MasterServicer):
     def __init__(self, mappers, reducers, num_centroids, num_iterations):
+
         self.mappers = mappers
         self.reducers = reducers
         self.num_centroids = num_centroids
         self.centroids = []
+        self.all_points = self.read_points_file("points.txt")
+        self.num_points = len(self.all_points)
         self.num_iterations = num_iterations
         self.epsilon = EPSILON
         self.start_indices = []
@@ -28,17 +32,17 @@ class Master(kmeans_pb2_grpc.MasterServicer):
         self.reducer_pids = []
         self.mapper_responses = []
         self.reducer_responses = []
-        self.master_dump_path = "master_dump.txt"
-        self.master_dump_handle = open(self.master_dump_path, "a+")
-        self.all_points = self.read_points_file("points2.txt")
-        self.num_points = len(self.all_points)
 
         self.init_centroids()
-        # self.assign_indices()
         self.create_file_structure()
 
         self.run()
 
+    def dump(self, message):
+        with open("master_dump.txt", "a+") as f:
+            f.write(message)
+            f.write("\n")
+            f.flush()
 
     def create_file_structure(self):
 
@@ -51,33 +55,21 @@ class Master(kmeans_pb2_grpc.MasterServicer):
 
         for i in range(self.mappers):
             os.mkdir(f"Mappers/M{i}")
-        for i in range(self.reducers):
-            os.mkdir(f"Reducers/R{i}")
-        # os.mkdir('partitions')
-        # os.mkdir('output')
 
     def read_points_file(self, filename):
-        self.master_dump_handle.write("Reading points file\n")
-        self.master_dump_handle.flush()
         points = []
         with open(filename, "r") as file:
             for line in file:
-                # print(line)
-                # x,y = line.split(',')
                 point = list(map(float, line.split(",")))
                 points.append(point)
         return points
 
     # select random points as initial centroids
     def init_centroids(self):
-        self.master_dump_handle.write("Initializing centroids\n")
-        self.master_dump_handle.flush()
         self.centroids = random.sample(self.all_points, self.num_centroids)
 
     # assign start and end indices to each mapper
     def assign_indices(self):
-        self.master_dump_handle.write("Assigning start and end indices to alive mappers\n")
-        self.master_dump_handle.flush()
         self.start_indices = []
         self.end_indices = []
         points_per_mapper = self.num_points // self.alive_mappers
@@ -97,8 +89,7 @@ class Master(kmeans_pb2_grpc.MasterServicer):
 
     # launch mappers as grpc servers in parallel seperate processes
     def launch_mappers(self):
-        self.master_dump_handle.write("Launching mappers as seperate processes from master\n")
-        self.master_dump_handle.flush()
+        self.dump("launching mappers")
         self.assign_mapper_addresses()
         for i in range(self.mappers):
             process_name = f"mapper{i+1}"
@@ -109,10 +100,8 @@ class Master(kmeans_pb2_grpc.MasterServicer):
             )
             p.start()
             self.mapper_pids.append(p.pid)
-            # mp.Process(target=self.launch_mapper, args=(self.mapper_addresses[i],),name=process_name).start()
 
     def launch_mapper(self, address):
-
         server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
         mapper = Mapper(self)
         kmeans_pb2_grpc.add_MapperServicer_to_server(mapper, server)
@@ -121,8 +110,7 @@ class Master(kmeans_pb2_grpc.MasterServicer):
         server.wait_for_termination()
 
     def launch_reducers(self):
-        self.master_dump_handle.write("Launching reducers as seperate processes from master\n")
-        self.master_dump_handle.flush()
+        self.dump("launching reducers")
         self.assign_reducer_addresses()
         for i in range(self.reducers):
             process_name = f"reducer{i+1}"
@@ -133,7 +121,6 @@ class Master(kmeans_pb2_grpc.MasterServicer):
             )
             p.start()
             self.reducer_pids.append(p.pid)
-            # mp.Process(target=self.launch_reducer, args=(self.reducer_addresses[i],),name=process_name).start()
 
     def launch_reducer(self, address):
         server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
@@ -146,25 +133,19 @@ class Master(kmeans_pb2_grpc.MasterServicer):
     def run(self):
         self.launch_mappers()
         self.launch_reducers()
-
-        print("Mappers: ", self.mapper_pids)
-        print("Reducers: ", self.reducer_pids)
         completed_iterations = 0
         converged = False
         old_centroids = []
         while completed_iterations < self.num_iterations and not converged:
-            self.master_dump_handle.write(f"Iteration: {completed_iterations}\n")
-            self.master_dump_handle.flush()
-            print("Iteration: ", completed_iterations)
+
+            self.dump(f"Iteration: {completed_iterations}")
+            print(f"Iteration: {completed_iterations+1}")
             old_centroids = self.centroids
             self.alive_mappers = 0
             self.alive_mapper_addresses = []
 
             # if completed_iterations == 1:
             #     time.sleep(15)
-            
-            self.master_dump_handle.write("Sending heartbeat to all mappers\n")
-            self.master_dump_handle.flush()
 
             for i in range(self.mappers):
                 try:
@@ -172,46 +153,22 @@ class Master(kmeans_pb2_grpc.MasterServicer):
                     stub = kmeans_pb2_grpc.MapperStub(channel)
                     args = kmeans_pb2.HeartBeatArgs(mapper_id=i)
                     response = stub.HeartBeat(args)
-                    print("Heartbeat from mapper: ", i, response.status)
-                    self.master_dump_handle.write(f"Heartbeat from mapper {i}: {response.status}\n")
-                    self.master_dump_handle.flush()
+                    self.dump(f"Heartbeat from mapper: {i} {response.status}")
                     self.alive_mappers += 1
                     self.alive_mapper_addresses.append(self.mapper_addresses[i])
                 except grpc.RpcError as e:
-                    self.master_dump_handle.write(f"mapper {i} is down\n")
-                    self.master_dump_handle.flush()
-                    print("mapper", i, "is down")
-                    print(e)
-
-            # else:
-            #     for i in range(self.mappers):
-            #         try:
-            #             channel = grpc.insecure_channel(self.mapper_addresses[i])
-            #             stub = kmeans_pb2_grpc.MapperStub(channel)
-            #             args = kmeans_pb2.HeartBeatArgs(mapper_id=i)
-            #             response = stub.HeartBeat(args)
-            #             print("Heartbeat from mapper ", i, response.status)
-            #             self.alive_mappers += 1
-            #             self.alive_mapper_addresses.append(self.mapper_addresses[i])
-            #         except grpc.RpcError as e:
-            #             print("mapper", i, "is down")
-            #             print(e)
+                    self.dump(f"mapper {i} is down")
 
             self.assign_indices()
-            # get stubs for all mappers and send request to all in parallel
-            self.master_dump_handle.write("Sending request to all mappers in parallel\n")
-            self.master_dump_handle.flush()
+            self.dump("Starting mappers in parallel")
             with ThreadPoolExecutor(max_workers=self.alive_mappers) as executor:
                 futures = []
                 for i in range(self.alive_mappers):
                     channel = grpc.insecure_channel(self.alive_mapper_addresses[i])
                     stub = kmeans_pb2_grpc.MapperStub(channel)
-                    # print the arguments
-
                     centroids = [
                         kmeans_pb2.Centroid(centroid=c) for c in self.centroids
                     ]
-
                     args = kmeans_pb2.MapperArgs(
                         mapper_id=i,
                         start_index=self.start_indices[i],
@@ -228,29 +185,16 @@ class Master(kmeans_pb2_grpc.MasterServicer):
             failed_mappers = []
             for future_num in range(len(futures)):
                 response = futures[future_num].result()
-                print("Response from mapper  ", future_num,response.status)
                 if response.status == "FAIL":
                     failed_mappers.append(future_num)
                 elif response.status == "Success":
                     self.mapper_responses.append(response)
-            
             while True:
-                # time.sleep(0.5)
-                # failed_mappers = []
-                print("Failed mappers: ", failed_mappers)
-                # write failed mappers to master_dump_file
-                self.master_dump_handle.write(f"Failed mappers: {failed_mappers}\n")
-                self.master_dump_handle.flush()
-
-                # If there are no failed mappers, break the loop
+                self.dump(f"Failed mappers {failed_mappers}")
                 if not failed_mappers:
                     break
-
-                # rerun the failed mappers
                 for failed_mapper in failed_mappers:
-                    self.master_dump_handle.write(f"Retrying mapper: {failed_mapper}\n")
-                    self.master_dump_handle.flush()
-                    print("Retrying mapper: ", failed_mapper)
+                    self.dump(f"Retrying mapper: {failed_mapper}")
                     channel = grpc.insecure_channel(
                         self.alive_mapper_addresses[failed_mapper]
                     )
@@ -272,131 +216,87 @@ class Master(kmeans_pb2_grpc.MasterServicer):
                         failed_mappers.remove(failed_mapper)
                         self.mapper_responses.append(response)
 
-            # # Gather all the responses
-            # for future_num in range(len(futures)):
-            #     response = futures[future_num].result()
-            #     if response.status == 'FAIL':
-            #         # executor.submit(self.retry_mapper, future_num)
-            #         print("Retrying mapper: ", future_num)
-            #     else:
-            #         self.mapper_responses.append(response)
-            # # print("Mapper responses: ", self.mapper_responses)
-
-            # if all mappers return SUCCESS, start reducers
-            self.master_dump_handle.write("All mappers returned SUCCESS\n")
-            self.master_dump_handle.flush()
-            print("Mapper responses: ", self.mapper_responses)
+            self.dump(f"Mapper responses: {self.mapper_responses}")
             if all([response.status == "Success" for response in self.mapper_responses]):
-                self.master_dump_handle.write("Starting reducers\n")
-                self.master_dump_handle.flush()
+
                 self.alive_reducers = 0
                 self.alive_reducer_addresses = []
-                # send heartbeat to all reducers
-                self.master_dump_handle.write("Sending heartbeat to all reducers\n")
-                self.master_dump_handle.flush()
+                self.dump("Sending heartbeat to reducers")
                 for i in range(self.reducers):
                     try:
                         channel = grpc.insecure_channel(self.reducer_addresses[i])
                         stub = kmeans_pb2_grpc.ReducerStub(channel)
                         args = kmeans_pb2.HeartBeatArgs(mapper_id=i)
                         response = stub.HeartBeat(args)
-                        self.master_dump_handle.write(f"Heartbeat from reducer {i}: {response.status}\n")
-                        self.master_dump_handle.flush()
-                        print("Heartbeat from reducer: ", i, response.status)
+                        self.dump(f"Heartbeat from reducer: {i} {response.status}")
                         self.alive_reducers += 1
                         self.alive_reducer_addresses.append(self.reducer_addresses[i])
                     except grpc.RpcError as e:
-                        self.master_dump_handle.write(f"reducer {i} is down\n")
-                        self.master_dump_handle.flush()
-                        print("reducer", i, "is down")
-                        print(e)
+                        self.dump(f"reducer {i} is down")
 
-                    # get stubs for all reducers and send request to all in parallel
-                self.master_dump_handle.write("Sending request to all reducers in parallel\n")
-                self.master_dump_handle.flush()
-                with ThreadPoolExecutor(max_workers=self.alive_reducers) as reducer_executor:
+                self.dump("Starting reducers in parallel")
+
+                reducer_partition_map = {}
+                for i in range(self.alive_reducers):
+                    reducer_partition_map[i] = []
+                for i in range(self.reducers):
+                    reducer_partition_map[i % self.alive_reducers].append(i)
+
+                with ThreadPoolExecutor(
+                    max_workers=self.alive_reducers
+                ) as reducer_executor:
                     reducer_futures = []
                     for i in range(self.alive_reducers):
                         channel = grpc.insecure_channel(self.alive_reducer_addresses[i])
                         stub = kmeans_pb2_grpc.ReducerStub(channel)
+                        reducer_id = i
                         args = kmeans_pb2.ReducerArgs(
-                            reducer_id=i,
+                            reducer_id=reducer_id,
+                            reducer_partition_map=reducer_partition_map[i],
                             mapper_addresses=self.alive_mapper_addresses,
                             num_centroids=self.num_centroids,
                         )
                         reducer_future = reducer_executor.submit(stub.Reducer, args)
                         reducer_futures.append(reducer_future)
 
-                # Gather all the responses
                 for future_num in range(len(reducer_futures)):
                     response = reducer_futures[future_num].result()
                     if response.status == "FAIL":
-                        # executor.submit(self.retry_mapper, future_num)
-                        print("Retrying reducer: ", future_num)
+                        self.dump(f"Retrying reducer: {future_num}")
                     else:
                         self.reducer_responses.append(response)
 
-                # print("Reducer responses: ", self.reducer_responses)
-                # consolidate the new centroids from all reducers
                 new_centroids = {}
-                self.master_dump_handle.write("Consolidating new centroids from reducers\n")
-                self.master_dump_handle.flush()
                 for reducer_response in self.reducer_responses:
                     for centroid in reducer_response.computed_centroids:
                         new_centroids[centroid.centroid_key - 1] = centroid.centroid
 
-                # print("New centroids: ", new_centroids)
-                # convert new_centroids into a list with key as the index
                 formatted_new_centroids = [
                     new_centroids[i] for i in range(self.num_centroids)
                 ]
+
                 print("Old centroids: ", old_centroids)
                 print("New centroids: ", formatted_new_centroids)
                 self.centroids = formatted_new_centroids
-                # check for convergence with an epsilon
                 for i in range(self.num_centroids):
-                    if (abs(old_centroids[i][0] - formatted_new_centroids[i][0]) < self.epsilon
-                        and abs(old_centroids[i][1]- formatted_new_centroids[i][1]) < self.epsilon):
+                    if (
+                        abs(old_centroids[i][0] - formatted_new_centroids[i][0])
+                        < self.epsilon
+                        and abs(old_centroids[i][1] - formatted_new_centroids[i][1])
+                        < self.epsilon
+                    ):
                         converged = True
                     else:
                         converged = False
                         break
                 completed_iterations += 1
-                self.master_dump_handle.write("writing new centroids to file\n")
-                self.master_dump_handle.flush()
                 self.write_centroids_to_file(self.centroids)
-
+                self.dump(f"centroids: {self.centroids}")
             else:
                 print("Some mappers failed. Retrying iteration")
-                # completed_iterations += 1
-            #     completed_iterations -= 1
-            #     self.mapper_responses = []
-            #     self.reducer_responses = []
-            #     self.centroids = old_centroids
-            #     self.run()
-            # # self.write_centroids_to_file(self.centroids)
+                completed_iterations += 1
 
-        for pid in self.mapper_pids:
-            os.kill(pid, 2)
-        for pid in self.reducer_pids:
-            os.kill(pid, 2)
         os.kill(os.getpid(), 2)
-
-    # def retry_mapper(self, future_num):
-    #     print("Retrying mapper: ", future_num)
-    #     channel = grpc.insecure_channel(self.mapper_addresses[future_num])
-    #     stub = kmeans_pb2_grpc.MapperStub(channel)
-    #     mapper_id = future_num
-    #     centroids = [kmeans_pb2.Centroid(centroid=c) for c in self.centroids]
-    #     args = kmeans_pb2.MapperArgs(
-    #         mapper_id=mapper_id,
-    #         start_index=self.start_indices[future_num],
-    #         end_index=self.end_indices[future_num],
-    #         centroids=centroids,
-    #         num_reducers=self.reducers,
-    #     )
-    #     response = stub.Mapper(args)
-    #     self.mapper_responses.append(response)
 
     def write_centroids_to_file(self, centroids):
         with open("centroids.txt", "w") as file:
@@ -407,25 +307,18 @@ class Master(kmeans_pb2_grpc.MasterServicer):
 class Mapper(kmeans_pb2_grpc.MapperServicer):
     def __init__(self, master):
         self.master = master
-        # self.partitions = []
+        self.partitions = []
 
     def Mapper(self, request, context):
-        print("Mapper called", request.mapper_id)
-        # start_time = time.time()
-        # print("mapper started at: ", start_time)
-        # # print(request)
-        # time.sleep(random.randint(1, 5))
-        # end_time = time.time()
-        # print("mapper ended at: ", end_time)
+        self.master.dump(f"Mapper called {request.mapper_id}")
         self.mapper_id = request.mapper_id
         self.num_centroids = len(request.centroids)
         self.start_index = request.start_index
         self.end_index = request.end_index
-        self.file_path = "points2.txt"
+        self.file_path = "points.txt"
         self.num_reducers = request.num_reducers
         self.points = self.read_points_file(self.file_path)
         self.threshold = THRESHOLD
-        # print(self.points)
         self.partitions = []
         self.point_assignments = []
 
@@ -438,17 +331,15 @@ class Mapper(kmeans_pb2_grpc.MapperServicer):
                     min_distance = distance
                     closest_centroid = i
             self.point_assignments.append({closest_centroid: point})
-        # print(self.point_assignments)
         self.partitions = self.create_partitions(
             self.point_assignments, self.num_reducers
         )
-        # print(self.partitions)
+        self.master.dump(f"Mapper {self.mapper_id} partitions: {self.partitions}")
         self.write_partitions_to_file(self.partitions)
 
         # random chance to send FAIL status
         if self.mapper_id == 0:
             prob = random.random()
-            print("Probability: ", prob)
             if prob < self.threshold:
                 return kmeans_pb2.MapperReply(status="FAIL")
             else:
@@ -470,7 +361,6 @@ class Mapper(kmeans_pb2_grpc.MapperServicer):
     def create_partitions(self, centroid_point_assignments, num_reducers):
 
         partitions = [[] for _ in range(num_reducers)]
-
         for assignment in centroid_point_assignments:
             for centroid_key, point in assignment.items():
                 partition_index = centroid_key % num_reducers
@@ -479,22 +369,22 @@ class Mapper(kmeans_pb2_grpc.MapperServicer):
         return partitions
 
     def write_partitions_to_file(self, partitions):
+        self.master.dump(f"Writing partitions to file")
         for i, partition in enumerate(partitions):
-            # print("Partition: ", partition)
             with open(f"Mappers/M{self.mapper_id}/partition_{i}.txt", "w") as file:
                 for centroid_key, point in partition:
                     file.write(f'{centroid_key},{",".join(map(str, point))}\n')
 
     def PartitionReq(self, request, context):
+        self.master.dump(
+            f"Partition request from reducer {request.reducer_id} to mapper {self.mapper_id}"
+        )
         partition_id = request.reducer_id
-        # print("Got request")
-        # read the partition from file corresponding to partition_id
         partition = []
         with open(
             f"Mappers/M{self.mapper_id}/partition_{partition_id}.txt", "r"
         ) as file:
             for line in file:
-                # print(line)
                 partition.append(line)
 
         return kmeans_pb2.PartitionReqReply(partition_file_content=partition)
@@ -513,36 +403,35 @@ class Reducer(kmeans_pb2_grpc.ReducerServicer):
         self.partition_data = []
 
     def Reducer(self, request, context):
-        print("Reducer called", request.reducer_id)
+        self.master.dump(f"Reducer called {request.reducer_id}")
         self.mapper_addresses = request.mapper_addresses
         self.num_centroids = request.num_centroids
         self.reducer_id = request.reducer_id
-        # request the reducer_id-th partition from all mappers
-        for i, mapper_address in enumerate(self.mapper_addresses):
+        self.partition_indexes = request.reducer_partition_map
+
+        for _, mapper_address in enumerate(self.mapper_addresses):
             channel = grpc.insecure_channel(mapper_address)
             stub = kmeans_pb2_grpc.MapperStub(channel)
-            partition_id = self.reducer_id
-            response = stub.PartitionReq(
-                kmeans_pb2.PartitionReqArgs(reducer_id=self.reducer_id)
-            )
-            # print(response.partition_file_content)
-            self.partition_data.append(response.partition_file_content)
+            for partition_id in self.partition_indexes:
+                response = stub.PartitionReq(
+                    kmeans_pb2.PartitionReqArgs(reducer_id=partition_id)
+                )
+                self.partition_data.append(response.partition_file_content)
 
-        # print(self.partition_data)
         self.grouped_partitions = self.shuffle_and_sort(self.partition_data)
-        # print(self.grouped_partitions)
         new_centroids = self.reduce_operation(self.grouped_partitions)
-        # print(new_centroids)
+        with open(f"Reducers/R{self.reducer_id}.txt", "w") as file:
+            for key, value in new_centroids.items():
+                file.write(f"{key},{','.join(map(str, value))}\n")
+
         response = kmeans_pb2.ReducerReply(status="Success")
 
         for key, value in new_centroids.items():
-            # print(key, value)
             data = kmeans_pb2.computedCentroid(centroid_key=key + 1, centroid=value)
             response.computed_centroids.append(data)
         return response
 
     def shuffle_and_sort(self, partitions):
-        # Combine all the partitions into a single list of key-value pairs
         all_pairs = []
         for partition in partitions:
             for line in partition:
@@ -551,10 +440,8 @@ class Reducer(kmeans_pb2_grpc.ReducerServicer):
                 value = [float(v) for v in value]
                 all_pairs.append((key, value))
 
-        # Sort the key-value pairs by key
         all_pairs.sort(key=lambda x: x[0])
 
-        # Group the values by key
         grouped_pairs = {}
         for key, value in all_pairs:
             if key not in grouped_pairs:
@@ -577,14 +464,11 @@ class Reducer(kmeans_pb2_grpc.ReducerServicer):
 if __name__ == "__main__":
     try:
         server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-        # take input from user
         mappers = int(input("Enter number of mappers: "))
         reducers = int(input("Enter number of reducers: "))
         num_centroids = int(input("Enter number of centroids: "))
         num_iterations = int(input("Enter number of iterations: "))
-        # create a master object
         master = Master(mappers, reducers, num_centroids, num_iterations)
-
         kmeans_pb2_grpc.add_MasterServicer_to_server(master, server)
         server.add_insecure_port("[::]:50050")
         server.start()

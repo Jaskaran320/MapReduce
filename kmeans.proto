@@ -1,15 +1,8 @@
 syntax = "proto3";
-
 package kmeans;
 
 
-//  Defining service name along with the function with ReqArg and Response name
-//  need multiple services for Master , mapper , reducer
-
-service Master{
-  // rpc Master_Mapper (MasterMapperArgs) returns (MasterMapperReply) {}
-  // rpc Master_Reducer (MasterReducerArgs) returns (MasterReducerReply) {}
-}
+service Master{}
 
 service Mapper{
   rpc Mapper (MapperArgs) returns (MapperReply) {}
@@ -21,7 +14,6 @@ service Reducer{
   rpc Reducer (ReducerArgs) returns (ReducerReply) {}
   rpc HeartBeat (HeartBeatArgs) returns (HeartBeatReply) {}
 }
-
 
 message MapperArgs {
   int32 mapper_id = 1;
@@ -39,22 +31,26 @@ message MapperReply {
   string status = 1;
 }
 
+message reducer_partition_map {
+  repeated string partitions=2;
+}
+
 message ReducerArgs {
   int32 reducer_id = 1;
-  repeated string mapper_addresses = 2;
-  int32 num_centroids = 3;
-
+  repeated int32 reducer_partition_map = 2; 
+  repeated string mapper_addresses = 3;
+  int32 num_centroids = 4;
 }
 
 message ReducerReply {
   string status = 1;
   repeated computedCentroid computed_centroids = 2;
 }
+
 message computedCentroid {
   int32 centroid_key = 1;
   repeated double centroid = 2;
 }
-
 
 message PartitionReqArgs {
   int32 reducer_id = 1;
@@ -65,7 +61,7 @@ message PartitionReqReply {
 }
 
 message HeartBeatArgs {
-  int32 mapper_id = 1;
+  int32 mapper_id = 1;  
 }
 
 message HeartBeatReply {
